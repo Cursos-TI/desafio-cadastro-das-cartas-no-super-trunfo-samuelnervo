@@ -20,7 +20,9 @@ int main() {
     struct Carta carta2;
 
     printf("Bem-vindo ao Jogo Super Trunfo - Países\n");
+    printf("\n");
     printf("Vamos começar cadastrando as cartas do jogo.\n");
+    printf("\n");
 
 
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
@@ -32,10 +34,10 @@ int main() {
 
     // Cadastro da primeira carta
     printf("Cadastro da primeira carta. Por favor insira os dados a seguir.\n");
+    printf("\n");
 
     printf("- Código da cidade: ");
     scanf("%d", &carta1.codigoCidade);
-    getchar(); // Limpa o caractere de nova linha pendente
 
     printf("- Nome da cidade: ");
     fgets(carta1.nome, sizeof(carta1.nome), stdin);
@@ -52,16 +54,13 @@ int main() {
     printf("- Número de pontos turísticos: ");
     scanf("%d", &carta1.pontosTuristicos);
 
-    getchar(); // Limpa o buffer antes da próxima leitura de string
-
-      printf("\n");
+    printf("\n");
 
     // Cadastro da segunda carta
     printf("Cadastro da segunda carta. Por favor insira os dados a seguir.\n");
 
     printf("- Código da cidade: ");
     scanf("%d", &carta2.codigoCidade);
-    getchar();
 
     printf("- Nome da cidade: ");
     fgets(carta2.nome, sizeof(carta2.nome), stdin);
