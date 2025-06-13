@@ -38,6 +38,7 @@ int main() {
 
     printf("- Código da cidade: ");
     scanf("%d", &carta1.codigoCidade);
+    getchar();
 
     printf("- Nome da cidade: ");
     fgets(carta1.nome, sizeof(carta1.nome), stdin);
@@ -58,10 +59,12 @@ int main() {
 
     // Cadastro da segunda carta
     printf("Cadastro da segunda carta. Por favor insira os dados a seguir.\n");
+    printf("\n");
 
     printf("- Código da cidade: ");
     scanf("%d", &carta2.codigoCidade);
-
+    getchar();
+    
     printf("- Nome da cidade: ");
     fgets(carta2.nome, sizeof(carta2.nome), stdin);
 
@@ -84,7 +87,9 @@ int main() {
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
     // Exibição dos dados da primeira carta
-    printf("Dados da primeira carta:\n");
+    printf("Dados da primeira carta.\n");
+    printf("\n");
+
     printf("Código da cidade: %d\n", carta1.codigoCidade);
     printf("Nome: %s", carta1.nome);
     printf("População: %d\n", carta1.populacao);
@@ -94,7 +99,9 @@ int main() {
     printf("\n");
 
     // Exibição dos dados da segunda carta
-    printf("Dados da segunda carta:\n");
+    printf("Dados da segunda carta.\n");
+    printf("\n");
+
     printf("Código da cidade: %d\n", carta2.codigoCidade);
     printf("Nome: %s", carta2.nome);
     printf("População: %d\n", carta2.populacao);
